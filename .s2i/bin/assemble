@@ -13,7 +13,7 @@ config_s2i
 echo "---> Installing application source"
 
 cp -Rf /tmp/src/*.html  ./
-DATE=`date "+%F"
+DATE=`date "+%F"`
 
 echo "---> Creating info page"
 echo "$DATE Copy comments as per exam scenerio" >> ./info.html
