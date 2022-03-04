@@ -16,8 +16,7 @@ cp -Rf /tmp/src/*.html  ./
 DATE=`date "+%F"`
 
 echo "---> Creating info page"
-echo "$DATE Copy comments as per exam scenerio" >> ./info.html
-
+echo "$DATE Added by me, Don't worry" >> ./info.html
 echo "Proudly served by Apache HTTP Server version $HTTPD_VERSION" >> ./info.html
 
 ######## CUSTOMIZATION ENDS HERE ############
