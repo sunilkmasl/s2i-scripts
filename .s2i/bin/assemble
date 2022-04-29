@@ -9,15 +9,14 @@ echo "---> Enabling s2i support in httpd24 image"
 config_s2i
 
 ######## CUSTOMIZATION STARTS HERE ############
-
-echo "Installing Application source"
+echo "Installing Application Source"
 cp -Rf /tmp/src/*.html ./
-DATE=(date "+%Y-%m-%d")
+DATE=$(date "+%Y-%m-%d")
 
 echo "Creating info page"
-echo "content given in exam $DATE " >> ./info.html
-echo "Content givne in exam $HTTPD_VERION" >> ./info.html
 
+echo "content given $DATE" >> ./info.html
+echo "content given $HTTPD_VERSION " >> ./info.html
 
 
 ######## CUSTOMIZATION ENDS HERE ############
