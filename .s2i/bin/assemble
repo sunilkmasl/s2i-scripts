@@ -14,11 +14,11 @@ echo "Installing Application Source"
 cp -Rf /tmp/src/*.html ./
 DATE=`date "+%F"`
 
-
 echo "Creating info page"
 
-echo "content given $DATE" >> ./info.html
-echo "content given $HTTPD_VERSION" >> ./info.html
+echo "Content given $DATE " >> ./info.html
+echo " Content $HTTPD_VERSION" >> ./info.html
+
 
 ######## CUSTOMIZATION ENDS HERE ############
 
